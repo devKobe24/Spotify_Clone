@@ -27,6 +27,10 @@ class TabBarViewController: UITabBarController {
 		let searchNavigationController = UINavigationController(rootViewController: searchViewController)
 		let libraryNavigationController = UINavigationController(rootViewController: libraryViewController)
 		
+		homeNavigationController.tabBarItem = UITabBarItem(title: "Home", image: UIImage(systemName: "house"), tag: 1)
+		searchNavigationController.tabBarItem = UITabBarItem(title: "Search", image: UIImage(systemName: "magnifyingglass"), tag: 2)
+		libraryNavigationController.tabBarItem = UITabBarItem(title: "Library", image: UIImage(systemName: "music.note.list"), tag: 3)
+		
 		homeNavigationController.navigationBar.prefersLargeTitles = true
 		searchNavigationController.navigationBar.prefersLargeTitles = true
 		libraryNavigationController.navigationBar.prefersLargeTitles = true
