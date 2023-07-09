@@ -19,7 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		if AuthManager.shared.isSignedIn {
 			window.rootViewController = TabBarViewController()
 		} else {
-			window.rootViewController = UINavigationController(rootViewController: WelcomeViewController())
+			let welcomeNavigationController = UINavigationController(rootViewController: WelcomeViewController())
+			welcomeNavigationController.navigationBar.prefersLargeTitles = true
+			welcomeNavigationController.viewControllers.first?.navigationItem.largeTitleDisplayMode = .always
+			window.rootViewController = welcomeNavigationController
 		}
 		
 		window.makeKeyAndVisible()
