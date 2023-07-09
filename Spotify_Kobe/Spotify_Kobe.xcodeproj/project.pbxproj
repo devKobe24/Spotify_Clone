@@ -22,6 +22,9 @@
 		BADAEB512A5A856000E21274 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADAEB502A5A856000E21274 /* PlayerViewController.swift */; };
 		BADAEB532A5A857900E21274 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADAEB522A5A857900E21274 /* PlaylistViewController.swift */; };
 		BADAEB552A5A859E00E21274 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADAEB542A5A859E00E21274 /* SearchResultViewController.swift */; };
+		BADAEB572A5A894C00E21274 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADAEB562A5A894C00E21274 /* AuthManager.swift */; };
+		BADAEB592A5A896300E21274 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADAEB582A5A896300E21274 /* APICaller.swift */; };
+		BADAEB5B2A5A897F00E21274 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADAEB5A2A5A897F00E21274 /* HapticsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		BADAEB502A5A856000E21274 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		BADAEB522A5A857900E21274 /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
 		BADAEB542A5A859E00E21274 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		BADAEB562A5A894C00E21274 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		BADAEB582A5A896300E21274 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		BADAEB5A2A5A897F00E21274 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,9 @@
 		BA4AB3662A5A7DDC0065E872 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				BADAEB562A5A894C00E21274 /* AuthManager.swift */,
+				BADAEB582A5A896300E21274 /* APICaller.swift */,
+				BADAEB5A2A5A897F00E21274 /* HapticsManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -229,10 +238,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BADAEB432A5A827400E21274 /* SearchViewController.swift in Sources */,
+				BADAEB572A5A894C00E21274 /* AuthManager.swift in Sources */,
 				BADAEB4B2A5A851600E21274 /* WelcomeViewController.swift in Sources */,
 				BADAEB4F2A5A854D00E21274 /* ProfileViewController.swift in Sources */,
 				BADAEB412A5A81F700E21274 /* TabBarViewController.swift in Sources */,
 				BA4AB3532A5A7D260065E872 /* HomeViewController.swift in Sources */,
+				BADAEB5B2A5A897F00E21274 /* HapticsManager.swift in Sources */,
 				BADAEB492A5A84F800E21274 /* AuthViewController.swift in Sources */,
 				BA4AB34F2A5A7D260065E872 /* AppDelegate.swift in Sources */,
 				BADAEB452A5A829800E21274 /* LibraryViewController.swift in Sources */,
@@ -240,6 +251,7 @@
 				BA4AB3512A5A7D260065E872 /* SceneDelegate.swift in Sources */,
 				BADAEB512A5A856000E21274 /* PlayerViewController.swift in Sources */,
 				BADAEB552A5A859E00E21274 /* SearchResultViewController.swift in Sources */,
+				BADAEB592A5A896300E21274 /* APICaller.swift in Sources */,
 				BADAEB4D2A5A853400E21274 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
