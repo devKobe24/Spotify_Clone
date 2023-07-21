@@ -31,7 +31,12 @@ class WelcomeViewController: UIViewController {
 	/// 참고 문서 : https://developer.apple.com/documentation/uikit/uiviewcontroller/1621398-viewdidlayoutsubviews
 	override func viewDidLayoutSubviews() {
 		super.viewDidLayoutSubviews()
-		signInButton.frame = CGRect(x: 20, y: 1, width: 200, height: 50)
+		signInButton.frame = CGRect(
+			x: 20,
+			y: view.height-50-view.safeAreaInsets.bottom,
+			width: view.width-40,
+			height: 50
+		)
 	}
 	
 	@objc func didTapSingInButton() {
