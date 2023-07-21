@@ -21,6 +21,8 @@ class WelcomeViewController: UIViewController {
         super.viewDidLoad()
 		self.title = "Spotify"
 		self.view.backgroundColor = .systemGreen
+		view.addSubview(signInButton)
+		signInButton.addTarget(self, action: #selector(didTapSingInButton), for: .touchUpInside)
     }
 	
 	// MARK: - viewDidLayoutSubviews
@@ -29,6 +31,7 @@ class WelcomeViewController: UIViewController {
 	/// 참고 문서 : https://developer.apple.com/documentation/uikit/uiviewcontroller/1621398-viewdidlayoutsubviews
 	override func viewDidLayoutSubviews() {
 		super.viewDidLayoutSubviews()
+		signInButton.frame = CGRect(x: 20, y: 1, width: 200, height: 50)
 	}
 	
 	@objc func didTapSingInButton() {
