@@ -12,6 +12,14 @@ final class AuthManager {
 	
 	private init() {}
 	
+	public var signInURL: URL? {
+		let scopes = AuthManagerNameSpace.scopes.localized
+		let redirectURI = AuthManagerNameSpace.redirectURI.localized
+		let base = AuthManagerNameSpace.base.localized
+		let signInURL = AuthManagerNameSpace.signInURL.localized
+		return URL(string: signInURL)
+	}
+	
 	var isSignedIn: Bool {
 		return false
 	}
@@ -48,6 +56,26 @@ enum Client {
 			return "6c41cd64cd924e2a91dca90d70a358bd"
 		case .secret:
 			return "eb70a866319847b8b4335c16b1954e17"
+		}
+	}
+}
+
+enum AuthManagerNameSpace {
+	case scopes
+	case redirectURI
+	case base
+	case signInURL
+	
+	var localized: String {
+		switch self {
+		case .scopes:
+			return "user-read-private"
+		case .redirectURI:
+			return "https://github.com/devKobe24/Spotify_Clone"
+		case .base:
+			return "https://accounts.spotify.com/authorize"
+		case .signInURL:
+			return "\(AuthManagerNameSpace.base.localized)?response_type=code&client_id=\(Client.id.token)&scope=\(AuthManagerNameSpace.scopes.localized)&redirect_uri=\(AuthManagerNameSpace.redirectURI.localized)"
 		}
 	}
 }
