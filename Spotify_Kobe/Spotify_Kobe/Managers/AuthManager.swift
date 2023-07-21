@@ -75,7 +75,7 @@ enum AuthManagerNameSpace {
 		case .base:
 			return "https://accounts.spotify.com/authorize"
 		case .signInURL:
-			return "\(AuthManagerNameSpace.base.localized)?response_type=code&client_id=\(Client.id.token)&scope=\(AuthManagerNameSpace.scopes.localized)&redirect_uri=\(AuthManagerNameSpace.redirectURI.localized)"
+			return "\(AuthManagerNameSpace.base.localized)?response_type=code&client_id=\(Client.id.token)&scope=\(AuthManagerNameSpace.scopes.localized)&redirect_uri=\(AuthManagerNameSpace.redirectURI.localized)&show_dialog=TRUE"
 		}
 	}
 }
