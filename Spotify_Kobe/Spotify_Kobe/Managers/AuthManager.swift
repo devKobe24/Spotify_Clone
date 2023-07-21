@@ -32,3 +32,22 @@ final class AuthManager {
 		return false
 	}
 }
+
+struct Constants {
+	static let clientID = Client.id.token
+	static let clientSecret = Client.secret.token
+}
+
+enum Client {
+	case id
+	case secret
+	
+	var token: String {
+		switch self {
+		case .id:
+			return "6c41cd64cd924e2a91dca90d70a358bd"
+		case .secret:
+			return "eb70a866319847b8b4335c16b1954e17"
+		}
+	}
+}
