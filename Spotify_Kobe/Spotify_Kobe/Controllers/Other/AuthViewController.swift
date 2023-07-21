@@ -43,5 +43,22 @@ class AuthViewController: UIViewController, WKNavigationDelegate {
 		super.viewDidLayoutSubviews()
 		webView.frame = view.bounds
 	}
-
+	
+	// MARK: - webView(_:didStartProvisionalNavigation:)
+	/// 기본 프레임에서 탐색이 시작되었음을 대리자에게 알립니다.
+	/// 웹 뷰는 탐색 요청을 처리하기 위해 임시 승인을 받은 후 해당 요청에 대한 응답을 받기 전에 이 메서드를 호출합니다.
+	func webView(_ webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!) {
+		guard let url = webView.url else {
+			return
+		}
+		
+		// Exchange the code for access token
+		guard let code = URLComponents(string: url.absoluteString)?
+			.queryItems?
+			.first(where: { $0.name == "code" })?
+			.value else {
+			return
+		}
+		print("Code: \(code)")
+	}
 }
