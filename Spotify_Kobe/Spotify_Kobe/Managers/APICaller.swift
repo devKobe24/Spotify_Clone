@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+final class APICaller {
+    static let shaerd = APICaller()
+    
+    private init() {}
+    
+    public func getCurrentUserProfileProfile(completion: @escaping (Result<UserProfile, Error>) -> Void) {
+        
+    }
+}
