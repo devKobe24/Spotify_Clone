@@ -7,6 +7,14 @@
 
 import UIKit
 
+var ENV: APIKeyable {
+    #if DEBUG
+    return DebugEnviroment()
+    #else
+    return ProduceEnviroment()
+    #endif
+}
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 	

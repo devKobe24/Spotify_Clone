@@ -30,6 +30,15 @@
 		BADAEB5F2A5A8B6900E21274 /* AudioTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADAEB5E2A5A8B6900E21274 /* AudioTrack.swift */; };
 		BADAEB612A5A8B8000E21274 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADAEB602A5A8B8000E21274 /* Artist.swift */; };
 		BADAEB632A5A8B9600E21274 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADAEB622A5A8B9600E21274 /* UserProfile.swift */; };
+		CD71FB152AC7DE530059D625 /* BaseEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD71FB142AC7DE530059D625 /* BaseEnvironment.swift */; };
+		CD71FB172AC7DFDE0059D625 /* PROD-API-TOKEN.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD71FB162AC7DFDE0059D625 /* PROD-API-TOKEN.plist */; };
+		CD71FB192AC7DFFB0059D625 /* DEBUG-API-TOKEN.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD71FB182AC7DFFB0059D625 /* DEBUG-API-TOKEN.plist */; };
+		CD71FB1C2AC7E1E40059D625 /* APIEnviroments.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD71FB1B2AC7E1E40059D625 /* APIEnviroments.swift */; };
+		CD71FB1E2AC7E54B0059D625 /* Bundle+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD71FB1D2AC7E54B0059D625 /* Bundle+.swift */; };
+		CD71FB222AC809870059D625 /* APIKeyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD71FB212AC809870059D625 /* APIKeyable.swift */; };
+		CD71FB242AC80A070059D625 /* DebugEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD71FB232AC80A070059D625 /* DebugEnviroment.swift */; };
+		CD71FB262AC80C2F0059D625 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD71FB252AC80C2F0059D625 /* APIKeys.swift */; };
+		CD71FB282AC80E720059D625 /* ProduceEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD71FB272AC80E720059D625 /* ProduceEnviroment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +68,16 @@
 		BADAEB602A5A8B8000E21274 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		BADAEB622A5A8B9600E21274 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		CD71FB102AC7CE530059D625 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		CD71FB142AC7DE530059D625 /* BaseEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEnvironment.swift; sourceTree = "<group>"; };
+		CD71FB162AC7DFDE0059D625 /* PROD-API-TOKEN.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PROD-API-TOKEN.plist"; sourceTree = "<group>"; };
+		CD71FB182AC7DFFB0059D625 /* DEBUG-API-TOKEN.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DEBUG-API-TOKEN.plist"; sourceTree = "<group>"; };
+		CD71FB1A2AC7E11F0059D625 /* Secrets_DEBUG.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets_DEBUG.xcconfig; sourceTree = "<group>"; };
+		CD71FB1B2AC7E1E40059D625 /* APIEnviroments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEnviroments.swift; sourceTree = "<group>"; };
+		CD71FB1D2AC7E54B0059D625 /* Bundle+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+.swift"; sourceTree = "<group>"; };
+		CD71FB212AC809870059D625 /* APIKeyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeyable.swift; sourceTree = "<group>"; };
+		CD71FB232AC80A070059D625 /* DebugEnviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugEnviroment.swift; sourceTree = "<group>"; };
+		CD71FB252AC80C2F0059D625 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		CD71FB272AC80E720059D625 /* ProduceEnviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProduceEnviroment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +117,10 @@
 				BA4AB3632A5A7DC10065E872 /* Views */,
 				BA4AB3622A5A7DB80065E872 /* Controllers */,
 				BA4AB35C2A5A7D270065E872 /* Info.plist */,
+				CD71FB162AC7DFDE0059D625 /* PROD-API-TOKEN.plist */,
 				CD71FB102AC7CE530059D625 /* Secrets.xcconfig */,
+				CD71FB182AC7DFFB0059D625 /* DEBUG-API-TOKEN.plist */,
+				CD71FB1A2AC7E11F0059D625 /* Secrets_DEBUG.xcconfig */,
 			);
 			path = Spotify_Kobe;
 			sourceTree = "<group>";
@@ -151,6 +173,7 @@
 		BA4AB3672A5A7DE40065E872 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CD71FB132AC7DE100059D625 /* API */,
 				BAD41AC52A6A63D70008BAED /* Extensions */,
 				BA4AB34E2A5A7D260065E872 /* AppDelegate.swift */,
 				BA4AB3502A5A7D260065E872 /* SceneDelegate.swift */,
@@ -162,6 +185,7 @@
 		BAD41AC52A6A63D70008BAED /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				CD71FB1D2AC7E54B0059D625 /* Bundle+.swift */,
 				BAD41AC32A6A63CC0008BAED /* Extension+UIView.swift */,
 			);
 			path = Extensions;
@@ -190,6 +214,35 @@
 				BADAEB542A5A859E00E21274 /* SearchResultViewController.swift */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		CD71FB132AC7DE100059D625 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CD71FB1F2AC805CF0059D625 /* Protocol */,
+				CD71FB142AC7DE530059D625 /* BaseEnvironment.swift */,
+				CD71FB232AC80A070059D625 /* DebugEnviroment.swift */,
+				CD71FB272AC80E720059D625 /* ProduceEnviroment.swift */,
+				CD71FB1B2AC7E1E40059D625 /* APIEnviroments.swift */,
+				CD71FB252AC80C2F0059D625 /* APIKeys.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CD71FB1F2AC805CF0059D625 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				CD71FB202AC809640059D625 /* Interface */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		CD71FB202AC809640059D625 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				CD71FB212AC809870059D625 /* APIKeyable.swift */,
+			);
+			path = Interface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +305,8 @@
 			files = (
 				BA4AB35B2A5A7D270065E872 /* LaunchScreen.storyboard in Resources */,
 				BA4AB3582A5A7D270065E872 /* Assets.xcassets in Resources */,
+				CD71FB172AC7DFDE0059D625 /* PROD-API-TOKEN.plist in Resources */,
+				CD71FB192AC7DFFB0059D625 /* DEBUG-API-TOKEN.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +318,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BADAEB432A5A827400E21274 /* SearchViewController.swift in Sources */,
+				CD71FB262AC80C2F0059D625 /* APIKeys.swift in Sources */,
 				BADAEB5D2A5A8B4F00E21274 /* Playlist.swift in Sources */,
+				CD71FB242AC80A070059D625 /* DebugEnviroment.swift in Sources */,
 				BADAEB572A5A894C00E21274 /* AuthManager.swift in Sources */,
 				BADAEB4B2A5A851600E21274 /* WelcomeViewController.swift in Sources */,
 				BADAEB4F2A5A854D00E21274 /* ProfileViewController.swift in Sources */,
@@ -275,12 +332,17 @@
 				BA4AB34F2A5A7D260065E872 /* AppDelegate.swift in Sources */,
 				BADAEB452A5A829800E21274 /* LibraryViewController.swift in Sources */,
 				BADAEB632A5A8B9600E21274 /* UserProfile.swift in Sources */,
+				CD71FB282AC80E720059D625 /* ProduceEnviroment.swift in Sources */,
 				BAD41AC42A6A63CC0008BAED /* Extension+UIView.swift in Sources */,
+				CD71FB1C2AC7E1E40059D625 /* APIEnviroments.swift in Sources */,
 				BADAEB532A5A857900E21274 /* PlaylistViewController.swift in Sources */,
 				BADAEB612A5A8B8000E21274 /* Artist.swift in Sources */,
 				BA4AB3512A5A7D260065E872 /* SceneDelegate.swift in Sources */,
 				BADAEB512A5A856000E21274 /* PlayerViewController.swift in Sources */,
+				CD71FB222AC809870059D625 /* APIKeyable.swift in Sources */,
+				CD71FB152AC7DE530059D625 /* BaseEnvironment.swift in Sources */,
 				BADAEB552A5A859E00E21274 /* SearchResultViewController.swift in Sources */,
+				CD71FB1E2AC7E54B0059D625 /* Bundle+.swift in Sources */,
 				BADAEB592A5A896300E21274 /* APICaller.swift in Sources */,
 				BADAEB4D2A5A853400E21274 /* SettingsViewController.swift in Sources */,
 			);
@@ -416,7 +478,6 @@
 		};
 		BA4AB3602A5A7D270065E872 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD71FB102AC7CE530059D625 /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
