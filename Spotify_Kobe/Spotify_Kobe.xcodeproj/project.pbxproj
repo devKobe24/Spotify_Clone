@@ -58,6 +58,7 @@
 		BADAEB5E2A5A8B6900E21274 /* AudioTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTrack.swift; sourceTree = "<group>"; };
 		BADAEB602A5A8B8000E21274 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		BADAEB622A5A8B9600E21274 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		CD71FB102AC7CE530059D625 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 				BA4AB3632A5A7DC10065E872 /* Views */,
 				BA4AB3622A5A7DB80065E872 /* Controllers */,
 				BA4AB35C2A5A7D270065E872 /* Info.plist */,
+				CD71FB102AC7CE530059D625 /* Secrets.xcconfig */,
 			);
 			path = Spotify_Kobe;
 			sourceTree = "<group>";
@@ -414,6 +416,7 @@
 		};
 		BA4AB3602A5A7D270065E872 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD71FB102AC7CE530059D625 /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -442,6 +445,7 @@
 		};
 		BA4AB3612A5A7D270065E872 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD71FB102AC7CE530059D625 /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
