@@ -30,6 +30,9 @@
 		BADAEB5F2A5A8B6900E21274 /* AudioTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADAEB5E2A5A8B6900E21274 /* AudioTrack.swift */; };
 		BADAEB612A5A8B8000E21274 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADAEB602A5A8B8000E21274 /* Artist.swift */; };
 		BADAEB632A5A8B9600E21274 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADAEB622A5A8B9600E21274 /* UserProfile.swift */; };
+		CD0CC6C32AC8D90100E6FDB9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0CC6C22AC8D90100E6FDB9 /* Constants.swift */; };
+		CD0CC6C82AC8FB9F00E6FDB9 /* SpotifyiOS in Frameworks */ = {isa = PBXBuildFile; productRef = CD0CC6C72AC8FB9F00E6FDB9 /* SpotifyiOS */; };
+		CD0CC6CB2AC957E300E6FDB9 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0CC6CA2AC957E300E6FDB9 /* AuthResponse.swift */; };
 		CD71FB152AC7DE530059D625 /* BaseEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD71FB142AC7DE530059D625 /* BaseEnvironment.swift */; };
 		CD71FB172AC7DFDE0059D625 /* PROD-API-TOKEN.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD71FB162AC7DFDE0059D625 /* PROD-API-TOKEN.plist */; };
 		CD71FB192AC7DFFB0059D625 /* DEBUG-API-TOKEN.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD71FB182AC7DFFB0059D625 /* DEBUG-API-TOKEN.plist */; };
@@ -67,11 +70,11 @@
 		BADAEB5E2A5A8B6900E21274 /* AudioTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTrack.swift; sourceTree = "<group>"; };
 		BADAEB602A5A8B8000E21274 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		BADAEB622A5A8B9600E21274 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
-		CD71FB102AC7CE530059D625 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		CD0CC6C22AC8D90100E6FDB9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CD0CC6CA2AC957E300E6FDB9 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
 		CD71FB142AC7DE530059D625 /* BaseEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEnvironment.swift; sourceTree = "<group>"; };
 		CD71FB162AC7DFDE0059D625 /* PROD-API-TOKEN.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PROD-API-TOKEN.plist"; sourceTree = "<group>"; };
 		CD71FB182AC7DFFB0059D625 /* DEBUG-API-TOKEN.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DEBUG-API-TOKEN.plist"; sourceTree = "<group>"; };
-		CD71FB1A2AC7E11F0059D625 /* Secrets_DEBUG.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets_DEBUG.xcconfig; sourceTree = "<group>"; };
 		CD71FB1B2AC7E1E40059D625 /* APIEnviroments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEnviroments.swift; sourceTree = "<group>"; };
 		CD71FB1D2AC7E54B0059D625 /* Bundle+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+.swift"; sourceTree = "<group>"; };
 		CD71FB212AC809870059D625 /* APIKeyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeyable.swift; sourceTree = "<group>"; };
@@ -85,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD0CC6C82AC8FB9F00E6FDB9 /* SpotifyiOS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,9 +122,7 @@
 				BA4AB3622A5A7DB80065E872 /* Controllers */,
 				BA4AB35C2A5A7D270065E872 /* Info.plist */,
 				CD71FB162AC7DFDE0059D625 /* PROD-API-TOKEN.plist */,
-				CD71FB102AC7CE530059D625 /* Secrets.xcconfig */,
 				CD71FB182AC7DFFB0059D625 /* DEBUG-API-TOKEN.plist */,
-				CD71FB1A2AC7E11F0059D625 /* Secrets_DEBUG.xcconfig */,
 			);
 			path = Spotify_Kobe;
 			sourceTree = "<group>";
@@ -149,6 +151,7 @@
 				BADAEB5E2A5A8B6900E21274 /* AudioTrack.swift */,
 				BADAEB602A5A8B8000E21274 /* Artist.swift */,
 				BADAEB622A5A8B9600E21274 /* UserProfile.swift */,
+				CD0CC6CA2AC957E300E6FDB9 /* AuthResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 		BA4AB3672A5A7DE40065E872 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CD0CC6C12AC8D8EC00E6FDB9 /* Enum */,
 				CD71FB132AC7DE100059D625 /* API */,
 				BAD41AC52A6A63D70008BAED /* Extensions */,
 				BA4AB34E2A5A7D260065E872 /* AppDelegate.swift */,
@@ -214,6 +218,14 @@
 				BADAEB542A5A859E00E21274 /* SearchResultViewController.swift */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		CD0CC6C12AC8D8EC00E6FDB9 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				CD0CC6C22AC8D90100E6FDB9 /* Constants.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 		CD71FB132AC7DE100059D625 /* API */ = {
@@ -261,6 +273,9 @@
 			dependencies = (
 			);
 			name = Spotify_Kobe;
+			packageProductDependencies = (
+				CD0CC6C72AC8FB9F00E6FDB9 /* SpotifyiOS */,
+			);
 			productName = Spotify_Kobe;
 			productReference = BA4AB34B2A5A7D260065E872 /* Spotify_Kobe.app */;
 			productType = "com.apple.product-type.application";
@@ -289,6 +304,9 @@
 				Base,
 			);
 			mainGroup = BA4AB3422A5A7D260065E872;
+			packageReferences = (
+				CD0CC6C62AC8FB9F00E6FDB9 /* XCRemoteSwiftPackageReference "ios-sdk" */,
+			);
 			productRefGroup = BA4AB34C2A5A7D260065E872 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -322,6 +340,7 @@
 				BADAEB5D2A5A8B4F00E21274 /* Playlist.swift in Sources */,
 				CD71FB242AC80A070059D625 /* DebugEnviroment.swift in Sources */,
 				BADAEB572A5A894C00E21274 /* AuthManager.swift in Sources */,
+				CD0CC6C32AC8D90100E6FDB9 /* Constants.swift in Sources */,
 				BADAEB4B2A5A851600E21274 /* WelcomeViewController.swift in Sources */,
 				BADAEB4F2A5A854D00E21274 /* ProfileViewController.swift in Sources */,
 				BADAEB412A5A81F700E21274 /* TabBarViewController.swift in Sources */,
@@ -344,6 +363,7 @@
 				BADAEB552A5A859E00E21274 /* SearchResultViewController.swift in Sources */,
 				CD71FB1E2AC7E54B0059D625 /* Bundle+.swift in Sources */,
 				BADAEB592A5A896300E21274 /* APICaller.swift in Sources */,
+				CD0CC6CB2AC957E300E6FDB9 /* AuthResponse.swift in Sources */,
 				BADAEB4D2A5A853400E21274 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,6 +501,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 64WAG22Y2J;
@@ -496,9 +517,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "MSKang.Spotify-Kobe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -506,10 +530,10 @@
 		};
 		BA4AB3612A5A7D270065E872 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD71FB102AC7CE530059D625 /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 64WAG22Y2J;
@@ -525,9 +549,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "MSKang.Spotify-Kobe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -555,6 +582,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CD0CC6C62AC8FB9F00E6FDB9 /* XCRemoteSwiftPackageReference "ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/spotify/ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CD0CC6C72AC8FB9F00E6FDB9 /* SpotifyiOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD0CC6C62AC8FB9F00E6FDB9 /* XCRemoteSwiftPackageReference "ios-sdk" */;
+			productName = SpotifyiOS;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BA4AB3432A5A7D260065E872 /* Project object */;
 }
