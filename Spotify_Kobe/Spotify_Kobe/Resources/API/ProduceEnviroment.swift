@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ProduceEnviroment: BaseEnvironment, APIKeyable {
+final class ProduceEnviroment: BaseEnvironment, APIKeyable {
     
     init() {
         super.init(enviromentName: APIEnviroments.produceApiEnvironment.name)
