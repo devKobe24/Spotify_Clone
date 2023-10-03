@@ -47,13 +47,18 @@ final class AuthManager {
         return currentDate.addingTimeInterval(fiveMinutes) >= expirationDate
     }
     
+    public func requestAuthorization() {
+        var clientId = ENV.CLIENT_ID_TOKEN
+        var clientSecret = ENV.CLIENT_SECRET_TOKEN
+    }
+    
     public func exchangeCodeForToken(
         code: String,
         completion: @escaping ((Bool) -> Void)
     ) {
         // Get Token
         
-        guard let url = URL(string: Constants.tokenApiUrl) else {
+        guard let url = URL(string: Urls.tokenAPI.value) else {
             return
         }
         
@@ -74,7 +79,7 @@ final class AuthManager {
         ]
         
         var request = URLRequest(url: url)
-        request.httpMethod = "POST"
+        request.httpMethod = HTTPMethods.POST.value
         request.setValue(
             "application/x-www-form-urlencoded",
             forHTTPHeaderField: "Content-Type"
@@ -111,9 +116,8 @@ final class AuthManager {
             
             
             do {
-                let result = try JSONDecoder().decode(AuthResponse.self, from: data)
-                self?.cacheToken(result: result)
-                completion(true)
+                let json = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed)
+                print("SUCCESS: \(json)")
             } catch {
                 print(error.localizedDescription)
                 completion(false)
@@ -133,7 +137,7 @@ final class AuthManager {
         }
         
         // Refresh the token
-        guard let url = URL(string: Constants.tokenApiUrl) else {
+        guard let url = URL(string: Urls.tokenAPI.value) else {
             return
         }
         

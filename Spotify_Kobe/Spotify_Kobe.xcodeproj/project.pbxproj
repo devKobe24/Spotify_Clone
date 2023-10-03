@@ -30,9 +30,11 @@
 		BADAEB5F2A5A8B6900E21274 /* AudioTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADAEB5E2A5A8B6900E21274 /* AudioTrack.swift */; };
 		BADAEB612A5A8B8000E21274 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADAEB602A5A8B8000E21274 /* Artist.swift */; };
 		BADAEB632A5A8B9600E21274 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADAEB622A5A8B9600E21274 /* UserProfile.swift */; };
-		CD0CC6C32AC8D90100E6FDB9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0CC6C22AC8D90100E6FDB9 /* Constants.swift */; };
+		CD0CC6C32AC8D90100E6FDB9 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0CC6C22AC8D90100E6FDB9 /* Urls.swift */; };
 		CD0CC6C82AC8FB9F00E6FDB9 /* SpotifyiOS in Frameworks */ = {isa = PBXBuildFile; productRef = CD0CC6C72AC8FB9F00E6FDB9 /* SpotifyiOS */; };
 		CD0CC6CB2AC957E300E6FDB9 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0CC6CA2AC957E300E6FDB9 /* AuthResponse.swift */; };
+		CD25E5872ACB8829004F4C99 /* HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD25E5862ACB8829004F4C99 /* HTTPMethods.swift */; };
+		CD25E5892ACB8BA5004F4C99 /* BodyParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD25E5882ACB8BA5004F4C99 /* BodyParameters.swift */; };
 		CD71FB152AC7DE530059D625 /* BaseEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD71FB142AC7DE530059D625 /* BaseEnvironment.swift */; };
 		CD71FB172AC7DFDE0059D625 /* PROD-API-TOKEN.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD71FB162AC7DFDE0059D625 /* PROD-API-TOKEN.plist */; };
 		CD71FB192AC7DFFB0059D625 /* DEBUG-API-TOKEN.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD71FB182AC7DFFB0059D625 /* DEBUG-API-TOKEN.plist */; };
@@ -70,8 +72,10 @@
 		BADAEB5E2A5A8B6900E21274 /* AudioTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTrack.swift; sourceTree = "<group>"; };
 		BADAEB602A5A8B8000E21274 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		BADAEB622A5A8B9600E21274 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
-		CD0CC6C22AC8D90100E6FDB9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CD0CC6C22AC8D90100E6FDB9 /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
 		CD0CC6CA2AC957E300E6FDB9 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		CD25E5862ACB8829004F4C99 /* HTTPMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
+		CD25E5882ACB8BA5004F4C99 /* BodyParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyParameters.swift; sourceTree = "<group>"; };
 		CD71FB142AC7DE530059D625 /* BaseEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEnvironment.swift; sourceTree = "<group>"; };
 		CD71FB162AC7DFDE0059D625 /* PROD-API-TOKEN.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PROD-API-TOKEN.plist"; sourceTree = "<group>"; };
 		CD71FB182AC7DFFB0059D625 /* DEBUG-API-TOKEN.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DEBUG-API-TOKEN.plist"; sourceTree = "<group>"; };
@@ -223,7 +227,9 @@
 		CD0CC6C12AC8D8EC00E6FDB9 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
-				CD0CC6C22AC8D90100E6FDB9 /* Constants.swift */,
+				CD0CC6C22AC8D90100E6FDB9 /* Urls.swift */,
+				CD25E5862ACB8829004F4C99 /* HTTPMethods.swift */,
+				CD25E5882ACB8BA5004F4C99 /* BodyParameters.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -340,7 +346,7 @@
 				BADAEB5D2A5A8B4F00E21274 /* Playlist.swift in Sources */,
 				CD71FB242AC80A070059D625 /* DebugEnviroment.swift in Sources */,
 				BADAEB572A5A894C00E21274 /* AuthManager.swift in Sources */,
-				CD0CC6C32AC8D90100E6FDB9 /* Constants.swift in Sources */,
+				CD0CC6C32AC8D90100E6FDB9 /* Urls.swift in Sources */,
 				BADAEB4B2A5A851600E21274 /* WelcomeViewController.swift in Sources */,
 				BADAEB4F2A5A854D00E21274 /* ProfileViewController.swift in Sources */,
 				BADAEB412A5A81F700E21274 /* TabBarViewController.swift in Sources */,
@@ -352,6 +358,7 @@
 				BADAEB452A5A829800E21274 /* LibraryViewController.swift in Sources */,
 				BADAEB632A5A8B9600E21274 /* UserProfile.swift in Sources */,
 				CD71FB282AC80E720059D625 /* ProduceEnviroment.swift in Sources */,
+				CD25E5892ACB8BA5004F4C99 /* BodyParameters.swift in Sources */,
 				BAD41AC42A6A63CC0008BAED /* Extension+UIView.swift in Sources */,
 				CD71FB1C2AC7E1E40059D625 /* APIEnviroments.swift in Sources */,
 				BADAEB532A5A857900E21274 /* PlaylistViewController.swift in Sources */,
@@ -360,6 +367,7 @@
 				BADAEB512A5A856000E21274 /* PlayerViewController.swift in Sources */,
 				CD71FB222AC809870059D625 /* APIKeyable.swift in Sources */,
 				CD71FB152AC7DE530059D625 /* BaseEnvironment.swift in Sources */,
+				CD25E5872ACB8829004F4C99 /* HTTPMethods.swift in Sources */,
 				BADAEB552A5A859E00E21274 /* SearchResultViewController.swift in Sources */,
 				CD71FB1E2AC7E54B0059D625 /* Bundle+.swift in Sources */,
 				BADAEB592A5A896300E21274 /* APICaller.swift in Sources */,
